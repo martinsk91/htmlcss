@@ -1,9 +1,44 @@
 header {
-    position: fixed;
     height: 50px;
-    background-color: aqua;
+    width: 100%; background-color: #0A3641;
+}
+nav {
+    margin-left:250px;
+    
 }
 
-.seksjon {
-    margin-top: 50px;
+nav a {
+    color: white;
+    margin: 100px;
+}
+.genbutton {
+    width: 150px;
+    height: 75px;
+    margin-left:500px;
+    margin:20px;
+    
+}
+main { padding-top:250px ;
+padding-left:375px;
+background-color: red; 
+display: flex; /* Add this line */
+justify-content: center; /* Add this line */}
+
+
+.sale-cont {
+    width: 25%;
+    height: 700px;
+    background-color: #ffffffff;
+    margin-left: 37.5%;
+    margin-top: 20%;
+}
+
+
+.fillbutt {
+    width: 100%;
+    height: 75px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #0A3641;
+    color: #ffffffff;
 }
