@@ -1,13 +1,18 @@
 
-
 body {
     margin: 0;
     padding: 0;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bg-img{
+
     background-image: url(/images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50% ; 
     background-attachment: fixed;
+    color: #0A3641;
+    
    
    
     
@@ -20,11 +25,15 @@ header {
     justify-content: space-around;
     position: fixed;
     z-index: 1000;
+    
+    
+    
  
     
 }
 a {
     text-decoration: none;
+    color:#0A3641
 }
 
 nav {
@@ -54,6 +63,8 @@ nav a {
     border-color: white;
     border-width: 1px;
     height: 40px;
+    padding-top: 25px;
+   
    
     
    
@@ -63,7 +74,7 @@ nav a {
     display: none;
 }
 
-#menu-checkbox:checked ~ nav { 
+#menu-checkbox:checked ~ div nav { 
     display: block;
 }
 
@@ -74,12 +85,20 @@ nav a {
     margin-top:10px;
     margin-right: 10px;
     font-size: 2em;
+    
+}
+
+.hamburger-icon:hover
+{
+    cursor: pointer;
 }
 
 .justify-buttons{
+
    position: relative;
    justify-content: center;
    padding-top:20em;
+   
   
     
 }
@@ -87,11 +106,12 @@ nav a {
 .justify-buttons a {
     background-color:white;
     opacity: 0.5;
-    padding: 50px;
+    padding: 10%;
     margin-left: 50px;
-    display: inline-block;
+    display: inline-flex;
     color: black;
     border-radius: 5px;
+    justify-self: center;
  
 }
 
@@ -119,28 +139,275 @@ nav a {
 
 }
 
+.jacket-content
+{   display: inline-flex;
+    padding-top:20vh;
+   
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.jackets {
+
+ 
+    display: inline-flex;
+    background-color: grey;
+  border-radius: 10px;
+    min-width: 70%;
+    padding-bottom:250px;
+    padding-top:40px ;
+    margin:20px;
+    justify-content: center;
+   
+    
+}
+.jackets p {
+    display: inline-block;
+}
+
+
+.formdiv {
+ padding-top: 20%;
+}
 
 
 
+
+.contactform, .Checkoutform {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    text-align: center;
+    opacity: 0.9;
+    padding: 10px;
+  }
+
+  .Checkoutform {
+    background-color: rgba(255, 255, 255, 0.8);
+
+  }
+  .contactform {
+    background-color: #0A3641;
+    color: white;
+  }
+
+  .contactform  input[type="submit"] {
+    background-color: white;
+    color: #0A3641;
+    
+   }
+
+
+
+
+
+form h3, ul {
+    text-align: left;
+    
+  
+}
+form ul{
+    padding-left: 10px;
+}
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  
+  input[type="text"],
+  input[type="submit"],
+  textarea {
+    
+    padding: 8px;
+    margin-bottom: 25px;
+    border: 3px solid;
+   
+    box-sizing: border-box;
+    display: inline-block;
+    
+
+  }
+  input[type="text"],textarea  {
+    width: 90%;
+  }
+  
+
+  textarea {
+    height: 200px;
+  }
+
+  
+  input[type="submit"] {
+    background-color: #0A3641;
+    opacity: 0.9;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+  }
+  
+  input[type="submit"]:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:focus {
+    outline: none;
+  }
+
+  .specjack {
+    padding-top:50% ;
+  }
+
+    
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top:10%;
+ 
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item a {
+    width: 20%;
+  text-decoration: none;
+  color: #0A3641;
+  
+}
+
+
+.grid-item a span {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    width: 170px;
+    padding: 30px 0px;
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    text-decoration: none;
+}
+
+.grid-just {
+    display: flex;
+    padding-top: 20%;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-containerhome {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 500px;
+    height: 500px;
+    grid-gap: 10px; /* Optional: Adjust the gap between grid items */
+   
+  }
+  .grid-item-b, .grid-item-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #0A3641;
+    border-radius: 5px;
+    opacity: 0.6;
+  }
+    .grid-item-b a, .grid-item-a a {
+        padding:30px;
+        
+
+    }
+   
+
+
+
+  .grid-item-a {
+   
+   
+    grid-column-start: 3; 
+    grid-row-start: 3;
+    grid-column-end: 5;
+    grid-row-end: 4;
+
+
+   
+  }
+  
+  .grid-item-b {
+
+    background-color: white;
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-end: 6;
+
+  }
 
 
 @media (min-width: 600px)
 {
+    .bg-img{
+        background-size: contain;
+       
+        background-position-y: top;
+       
+      
+    }
+
+.wrapcont {
+    display: flex;
+    max-width: 50%;
+    justify-self: center;
+    margin-left: 25%;
+}
     nav {
-        display: block;
+        display: inline-flex;
+        gap: 1rem;
         position: static;
-        justify-content:space-between;
+        justify-self: center;
+      
+       
+     
+        
         
  
     }
     nav a {
-        display: inline-block;
-        
-        background-color: blue;
       
-        margin-top: 0;
-        
-        
+ /* width: 50px;
+height: 50px;
+         */
+         flex-grow: 1;
+         border-style: none;
+
     }
 
     .hamburger-icon{
@@ -150,6 +417,84 @@ nav a {
     .sale-cont {
         width: 50%;
        margin-left: 25%;
+       margin-top: 60px;
 }
 
+.grid-just { 
+    padding-top: 25px;}
 
+
+
+    .grid-item-a {
+        
+        grid-column-start: 5; 
+        grid-row-start: 5;
+        grid-column-end:7 ;
+        grid-row-end:6 ;
+  
+       
+      }
+      
+      .grid-item-b {
+       
+   
+        grid-column-start: 1;
+        grid-column-end: 3;
+     
+      }
+
+
+
+.jackets {
+
+    min-width: auto;
+
+}
+
+.contactform,.Checkoutform {
+    width: 500px;
+    
+
+}
+.formdiv {
+    padding-top: 150px;
+}
+
+.grid-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover a {
+    opacity: 1;
+}
+
+.grid-item a span {
+
+    top: 50%;
+}
+
+.grid-item {
+    width: 100% ;
+    max-height: 1000px;
+}
+
+.jacket-content {
+    justify-content:space-evenly;
+
+}
+
+}

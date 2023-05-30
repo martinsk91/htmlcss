@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/file.css">
+    <title>Rainydays</title>
+    <script src="https://kit.fontawesome.com/751c721f41.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-img">
     <header>
+      
         <a href="index.html">
-            <img src="logo" alt="Rainydays logo">
+            <img class="logo" src="/images/logo.png" alt="Rainydays logo">
             </a>
+            
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <div class="wrapcont">
         <nav>
             <a href="men.html">Men</a>
             <a href="women.html">Women</a>
             <a href="contact.html">Contact</a>
             <a href="about.html">About Us</a>
-
-        </nav>
+         </nav>
+        </div>
     </header>
-    <div class="contactbox">
+   <main>
+    <div class="formdiv">
+         
+        <form class="contactform" action="submit.php" method="post">
+           
+     
       
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required>
+          
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required>
+          
+            <label for="Phone">Phone:</label>
+            <input type="text" id="Phone" name="Phone" required>
+          
+            <label for="Subject">Subject:</label>
+            <input type="text" id="Subject" name="Subject" required>
+          
+            <label for="Message">Message:</label>
+            <textarea  id="Message" name="Message" required>
+          
+            
+            <input type="submit" value="SEND">
+          </form>
     </div>
-    <div class="contactbox"></div>
+
+
+
+   </main>
 
 <footer></footer>
 </body>

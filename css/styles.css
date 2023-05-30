@@ -110,6 +110,7 @@ nav li a {
     position: relative; /* Add this to set the container as the relative position for its absolute children */
 }
 
+
 @media (max-width: 800px)   { 
     
     nav a {
