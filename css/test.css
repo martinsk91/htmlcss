@@ -1,0 +1,18 @@
+
+.justdiv
+{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-color: black;
+    height: 50%;
+    width: 100%;
+    padding-top:25%;
+}
+  
+    .rektangel {
+    width: 300px;
+    height: 150px;
+    background: #dd6b4d;
+    
+  }

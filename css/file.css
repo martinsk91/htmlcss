@@ -3,7 +3,10 @@ body {
     margin: 0;
     padding: 0;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+  max-width: 1300px; 
+  margin:0 auto;
+
+  }
 .bg-img{
 
     background-image: url(/images/background1.jpg);
@@ -26,11 +29,18 @@ header {
     position: fixed;
     z-index: 1000;
     
+   
+    
     
     
  
     
 }
+
+
+
+
+
 a {
     text-decoration: none;
     color:#0A3641
@@ -45,6 +55,7 @@ nav {
     background-color: #0A3641;
     justify-content: center;
     z-index: 1000;
+  
    
     
  
@@ -152,19 +163,26 @@ nav a {
 .jackets {
 
  
-    display: inline-flex;
+    display:flex;
     background-color: grey;
   border-radius: 10px;
-    min-width: 70%;
+   width: 235px;
     padding-bottom:250px;
     padding-top:40px ;
     margin:20px;
     justify-content: center;
-   
+   flex-direction: column;
+  
+ align-content: space-around;
     
 }
+.jackets img{
+  
+}
+
 .jackets p {
-    display: inline-block;
+    text-align: center;
+    
 }
 
 
@@ -291,6 +309,9 @@ form ul{
 
 .grid-item img {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 800px;
 }
 
 .grid-item a {
@@ -326,8 +347,8 @@ form ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    width: 500px;
-    height: 500px;
+   width: 500px;
+   height: 500px;
     grid-gap: 10px; /* Optional: Adjust the gap between grid items */
    
   }
@@ -356,9 +377,13 @@ form ul{
     grid-row-start: 3;
     grid-column-end: 5;
     grid-row-end: 4;
+    min-width: 148px;
 
 
    
+  }
+  .grid-item-b span {
+    display: block; 
   }
   
   .grid-item-b {
@@ -369,6 +394,13 @@ form ul{
     grid-column-end: 5;
     grid-row-end: 6;
 
+  }
+
+  .logo 
+  {
+      float: left;
+    
+      padding-top: 10px;
   }
 
 
@@ -392,7 +424,7 @@ form ul{
         display: inline-flex;
         gap: 1rem;
         position: static;
-        justify-self: center;
+        justify-self: center; 
       
        
      
@@ -400,6 +432,9 @@ form ul{
         
  
     }
+
+
+
     nav a {
       
  /* width: 50px;
@@ -442,6 +477,7 @@ height: 50px;
         grid-column-end: 3;
      
       }
+
 
 
 
