@@ -3,10 +3,12 @@ body {
     margin: 0;
     padding: 0;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  max-width: 1300px; 
-  margin:0 auto;
+   margin:0 auto; 
 
   }
+
+
+
 .bg-img{
 
     background-image: url(/images/background1.jpg);
@@ -130,7 +132,7 @@ nav a {
 .sale-cont {
     min-width: 300px;
     width: 100%;
-  padding-top: 250px;
+  padding-top: 70px;
     height: 700px;
    background-color: transparent;
     z-index: 90;
@@ -149,6 +151,50 @@ nav a {
     
 
 }
+
+.jacket-content1  {     
+   display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2%;
+  width: 60%;
+  margin: 0 auto;
+  padding-top:20%;
+}
+
+
+
+
+.jackets1 {
+
+ 
+  display:flex;
+  background-color:#fff;
+border-radius: 10px;
+ width: 250px;
+ margin-inline:auto;
+  padding-bottom:50px;
+padding-top:40px ;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+  
+}
+
+
+/* .jackets1:nth-child(7) {
+  /* grid-column: 1 / span 2; */
+  /* grid-column: span 1;
+  justify-self: center; */
+  grid-column: 1 / span 2; /* Occupy two columns */
+  justify-self: center; /* Center horizontally within the columns */
+  align-self: center; /* Center vertically within the rows */
+} */
+
+.jackets1 img {
+  width: 80%;
+}
+
 
 .jacket-content
 {   display: inline-flex;
@@ -176,9 +222,7 @@ nav a {
  align-content: space-around;
     
 }
-.jackets img{
-  
-}
+ 
 
 .jackets p {
     text-align: center;
@@ -186,14 +230,64 @@ nav a {
 }
 
 
-.formdiv {
+/* .formdiv {
  padding-top: 20%;
+} */
+
+.contactgrid {
+  display: grid;
+  grid-template-columns:1fr;
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+  
+  gap: 50px;
 }
 
 
+.contactinfo {
+  display:flex; 
+  background-color: #0A3641;
+  color: white;
+align-items: center;
+  height:700px;
+  flex-direction: column;
+  border-radius: 20px;
+  opacity: 0.9;
+  text-align: center;
+
+  
+  
 
 
-.contactform, .Checkoutform {
+}
+
+.contactinfo  h2
+{
+  font-size: 1.5rem;
+}
+
+.contactinfo  p
+{
+  font-size: 1.2rem;
+}
+
+.contactinfo span {display: block;
+ 
+                    }
+
+
+.contactform {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-bottom: 200px;
+  text-align: center;
+  opacity: 0.9;
+  
+}
+
+.Checkoutform {
     width: 90%;
     margin: 0 auto;
     border-radius: 20px;
@@ -292,7 +386,7 @@ form ul{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns:1fr;
     grid-gap: 10px;
     width: 100%;
     margin: 0 auto;
@@ -349,7 +443,7 @@ form ul{
     grid-template-rows: repeat(6, 1fr);
    width: 500px;
    height: 500px;
-    grid-gap: 10px; /* Optional: Adjust the gap between grid items */
+    grid-gap: 10px; 
    
   }
   .grid-item-b, .grid-item-a {
@@ -396,141 +490,193 @@ form ul{
 
   }
 
-  .logo 
+
+  @media (min-width: 900px)
   {
-      float: left;
+      .bg-img{
+          background-size: contain;
+         
+          background-position-y: top;
+         
+        
+      }
+      .logo 
+      {
+          float: left;
+        
+          padding-top: 10px;
+      }
     
-      padding-top: 10px;
+  .wrapcont {
+      display: flex;
+      max-width: 50%;
+      justify-self: center;
+      margin-left: 25%;
+  }
+      nav {
+          display: inline-flex;
+          gap: 1rem;
+          position: static;
+          justify-self: center; 
+        
+         
+       
+          
+          
+   
+      }
+  
+  
+  
+      nav a {
+        
+   /* width: 50px;
+  height: 50px;
+           */
+           flex-grow: 1;
+           border-style: none;
+  
+      }
+  
+      .hamburger-icon{
+              display: none;
+      }
+  
+      .sale-cont {
+          width: 50%;
+         margin-left: 25%;
+         margin-top: 60px;
+  }
+  
+  .grid-just { 
+      padding-top: 25px;}
+  
+  
+  
+      .grid-item-a {
+          
+          grid-column-start: 5; 
+          grid-row-start: 5;
+          grid-column-end:7 ;
+          grid-row-end:6 ;
+    
+         
+        }
+        
+        .grid-item-b {
+         
+     
+          grid-column-start: 1;
+          grid-column-end: 3;
+       
+        }
+  
+  
+  
+  
+  .jackets {
+  
+      min-width: auto;
+  
+  }
+  
+  .Checkoutform {
+      width: 500px;
+      
+  
+  }
+  .formdiv {
+      padding-top: 150px;
+  }
+  
+  .grid-container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: black;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover a {
+      opacity: 1;
+  }
+  
+  .grid-item a span {
+  
+      top: 50%;
+  }
+  
+  .grid-item {
+      width: 100% ;
+      max-height: 1000px;
+      border-style: solid;
+  }
+  
+  .jacket-content {
+      justify-content:space-evenly;
+  
+  }
+  
+  
+.contactgrid {
+  width: 40%;
+
+}
+  
   }
 
 
-@media (min-width: 600px)
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 900px)
 {
-    .bg-img{
-        background-size: contain;
-       
-        background-position-y: top;
-       
-      
-    }
-
-.wrapcont {
-    display: flex;
-    max-width: 50%;
-    justify-self: center;
-    margin-left: 25%;
-}
-    nav {
-        display: inline-flex;
-        gap: 1rem;
-        position: static;
-        justify-self: center; 
-      
-       
-     
-        
-        
  
-    }
+
+.jacket-content1
+{    
+  padding-top: 10%;
+  grid-template-columns: repeat(2, 1fr);
+  width:clamp(360px,60%,1300px);
+  background-color: transparent;
+  gap:clamp(10px,10%,100px);
+   height: auto;
+   padding-bottom:500px;
 
 
 
-    nav a {
-      
- /* width: 50px;
-height: 50px;
-         */
-         flex-grow: 1;
-         border-style: none;
-
-    }
-
-    .hamburger-icon{
-            display: none;
-    }
-
-    .sale-cont {
-        width: 50%;
-       margin-left: 25%;
-       margin-top: 60px;
-}
-
-.grid-just { 
-    padding-top: 25px;}
-
-
-
-    .grid-item-a {
-        
-        grid-column-start: 5; 
-        grid-row-start: 5;
-        grid-column-end:7 ;
-        grid-row-end:6 ;
   
-       
-      }
-      
-      .grid-item-b {
-       
    
-        grid-column-start: 1;
-        grid-column-end: 3;
-     
-      }
-
-
-
-
-.jackets {
-
-    min-width: auto;
-
 }
 
-.contactform,.Checkoutform {
-    width: 500px;
-    
-
+.jackets1 {
+  max-width: 300px;
+  width:100%;
+  box-shadow: 10px 5px 5px black;
+ 
 }
-.formdiv {
-    padding-top: 150px;
-}
-
-.grid-container{
-    grid-template-columns: repeat(2, 1fr);
-}
-.grid-item a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.grid-item:hover a {
-    opacity: 1;
-}
-
-.grid-item a span {
-
-    top: 50%;
-}
-
-.grid-item {
-    width: 100% ;
-    max-height: 1000px;
-}
-
-.jacket-content {
-    justify-content:space-evenly;
-
+.centerjacket {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: red;
 }
 
 }
