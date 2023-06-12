@@ -198,6 +198,16 @@ justify-items: center;
   width: 80%;
 }
 
+.buyjacket {
+
+}
+
+
+.jackets1 a{
+  background-color: #0A3641;
+  color: #fff;
+  padding:20px ;
+}
 
 .jacket-content
 {   display: inline-flex;
