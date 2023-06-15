@@ -103,7 +103,19 @@ nav a {
 }
 
 
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color1);
+  height: 100px;
+}
 
+.footericon {
+  font-size: 80px;
+  color: var(--color2);
+  padding: 15px;
+  }
 
 
 /* mostly index page styling  */
@@ -675,7 +687,7 @@ display: block;
 
 .grid-container {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr;
     grid-gap: 10px;
     width: 80%;
     margin: 0 auto;
@@ -870,7 +882,8 @@ display: block;
   }
   
   .grid-container{
-      /* grid-template-columns: repeat(2, 1fr); */
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom:50px;
   }
   .grid-item a {
       position: absolute;
