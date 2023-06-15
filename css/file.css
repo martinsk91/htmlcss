@@ -449,6 +449,10 @@ text-align: center;
   opacity: 0.9;
   background-color:var(--color1);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   
 }
@@ -470,7 +474,13 @@ text-align: center;
  padding: 10px;
   }
 
-
+.Checkoutform a{
+  background-color:var(--color2);
+  display: block;
+  width: 20%;
+  padding:15px;
+  border-radius: 20px;
+}
 
 
   .contactform  input[type="submit"], .Checkoutform input[type="submit"]  {
