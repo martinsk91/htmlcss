@@ -352,10 +352,11 @@ text-align: center;
   opacity: 0.9;
   background-color:var(--color1);
   color: white;
-  display: flex;
+  /* display: flex;
+  
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .contactform, .contactinfo {
