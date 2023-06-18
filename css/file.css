@@ -448,7 +448,7 @@ gap:20px;
 
   
 }
-.bold {
+.price {
  
   text-decoration:solid;
   font-size: 1.8rem;
@@ -728,10 +728,7 @@ width: 65%;
 min-width: 850px;
 
 }
-.sale span {
 
-  
-}
 .sale {
   grid-row: 4/9;
   grid-column: 1/8;
@@ -757,10 +754,7 @@ grid-column: 1/8;
 grid-row:9/13;
 }
 
-.bold {
- 
 
-}
 
 .saletext {
   grid-column: 1/8;
@@ -776,10 +770,7 @@ grid-row:9/13;
   text-transform: uppercase;
 }
 
-.sale img, .sale2 img {
 
- 
-}
 
 
 .specgrid {
